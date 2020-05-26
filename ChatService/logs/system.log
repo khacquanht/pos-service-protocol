@@ -1,0 +1,339 @@
+2016-03-19 10:23:32  INFO log:178 - Logging initialized @817ms
+2016-03-19 10:23:32  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2ccf47c8{/,null,null} contextPath ends with /*
+2016-03-19 10:23:32  WARN ContextHandler:1335 - Empty contextPath
+2016-03-19 10:23:32  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-19 10:23:32  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2ccf47c8{/,null,AVAILABLE}
+2016-03-19 10:23:32  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2659da0f{/,null,AVAILABLE}
+2016-03-19 10:23:32  INFO ServerConnector:266 - Started ServerConnector@5ae74a94{HTTP/1.1}{0.0.0.0:8083}
+2016-03-19 10:23:32  INFO Server:350 - Started @1107ms
+2016-03-19 11:45:33  INFO log:178 - Logging initialized @275ms
+2016-03-19 11:45:33  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2c7acb6f{/,null,null} contextPath ends with /*
+2016-03-19 11:45:33  WARN ContextHandler:1335 - Empty contextPath
+2016-03-19 11:45:33  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-19 11:45:33  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2c7acb6f{/,null,AVAILABLE}
+2016-03-19 11:45:33  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@33931942{/,null,AVAILABLE}
+2016-03-19 11:45:33  INFO ServerConnector:266 - Started ServerConnector@1e4fcb33{HTTP/1.1}{0.0.0.0:8083}
+2016-03-19 11:45:33  INFO Server:350 - Started @587ms
+2016-03-19 11:46:12  WARN HttpChannel:361 - /?type=1&username=user1&name=displayname
+org.eclipse.jetty.websocket.api.WebSocketException: No WebSockets have been registered with the factory.  Cannot use default implementation of WebSocketCreator.
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.createWebSocket(WebSocketServerFactory.java:256)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.acceptWebSocket(WebSocketServerFactory.java:158)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.acceptWebSocket(WebSocketServerFactory.java:147)
+	at org.eclipse.jetty.websocket.server.WebSocketHandler.handle(WebSocketHandler.java:97)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1113)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1049)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:462)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:279)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:232)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:745)
+2016-03-19 11:46:22  WARN HttpChannel:361 - /
+org.eclipse.jetty.websocket.api.WebSocketException: No WebSockets have been registered with the factory.  Cannot use default implementation of WebSocketCreator.
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.createWebSocket(WebSocketServerFactory.java:256)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.acceptWebSocket(WebSocketServerFactory.java:158)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.acceptWebSocket(WebSocketServerFactory.java:147)
+	at org.eclipse.jetty.websocket.server.WebSocketHandler.handle(WebSocketHandler.java:97)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1113)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1049)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:462)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:279)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:232)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:745)
+2016-03-19 11:47:12  INFO log:178 - Logging initialized @322ms
+2016-03-19 11:47:12  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5c71b273{/,null,null} contextPath ends with /*
+2016-03-19 11:47:12  WARN ContextHandler:1335 - Empty contextPath
+2016-03-19 11:47:12  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-19 11:47:12  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5c71b273{/,null,AVAILABLE}
+2016-03-19 11:47:12  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@22b7be2a{/,null,AVAILABLE}
+2016-03-19 11:47:12  INFO ServerConnector:266 - Started ServerConnector@5b895cb9{HTTP/1.1}{0.0.0.0:8083}
+2016-03-19 11:47:12  INFO Server:350 - Started @639ms
+2016-03-19 11:47:20  INFO MsgSocketController:45 - MsgSocketController.onConnect: remote address = 192.168.1.143
+2016-03-19 11:48:24  INFO log:178 - Logging initialized @285ms
+2016-03-19 11:48:24  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2ccf47c8{/,null,null} contextPath ends with /*
+2016-03-19 11:48:24  WARN ContextHandler:1335 - Empty contextPath
+2016-03-19 11:48:24  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-19 11:48:25  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2ccf47c8{/,null,AVAILABLE}
+2016-03-19 11:48:25  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@63041bb7{/,null,AVAILABLE}
+2016-03-19 11:48:25  INFO ServerConnector:266 - Started ServerConnector@4bdc0bc7{HTTP/1.1}{0.0.0.0:8083}
+2016-03-19 11:48:25  INFO Server:350 - Started @580ms
+2016-03-19 11:48:28  INFO MsgSocketController:45 - MsgSocketController.onConnect: remote address = 192.168.1.143
+2016-03-19 11:49:20  INFO log:178 - Logging initialized @345ms
+2016-03-19 11:49:20  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5c71b273{/,null,null} contextPath ends with /*
+2016-03-19 11:49:20  WARN ContextHandler:1335 - Empty contextPath
+2016-03-19 11:49:20  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-19 11:49:20  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5c71b273{/,null,AVAILABLE}
+2016-03-19 11:49:20  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2bc609cd{/,null,AVAILABLE}
+2016-03-19 11:49:20  INFO ServerConnector:266 - Started ServerConnector@4f25445a{HTTP/1.1}{0.0.0.0:8083}
+2016-03-19 11:49:20  INFO Server:350 - Started @687ms
+2016-03-19 11:49:22  INFO MsgSocketController:45 - MsgSocketController.onConnect: remote address = 192.168.1.143
+2016-03-23 00:17:09  INFO log:178 - Logging initialized @1920ms
+2016-03-23 00:17:09  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2c7acb6f{/,null,null} contextPath ends with /*
+2016-03-23 00:17:09  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:17:09  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:17:09  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2c7acb6f{/,null,AVAILABLE}
+2016-03-23 00:17:09  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@7a1fc671{/,null,AVAILABLE}
+2016-03-23 00:17:10  INFO ServerConnector:266 - Started ServerConnector@22cf2994{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:17:10  INFO Server:350 - Started @3141ms
+2016-03-23 00:19:02  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:19:59  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:25:24  INFO log:178 - Logging initialized @416ms
+2016-03-23 00:25:24  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5c71b273{/,null,null} contextPath ends with /*
+2016-03-23 00:25:24  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:25:24  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:25:24  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5c71b273{/,null,AVAILABLE}
+2016-03-23 00:25:24  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@55aa628{/,null,AVAILABLE}
+2016-03-23 00:25:24  INFO ServerConnector:266 - Started ServerConnector@141ba1f1{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:25:24  INFO Server:350 - Started @710ms
+2016-03-23 00:25:32  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:28:26  INFO log:178 - Logging initialized @276ms
+2016-03-23 00:28:26  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2c7acb6f{/,null,null} contextPath ends with /*
+2016-03-23 00:28:26  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:28:26  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:28:26  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2c7acb6f{/,null,AVAILABLE}
+2016-03-23 00:28:26  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@7a1fc671{/,null,AVAILABLE}
+2016-03-23 00:28:26  INFO ServerConnector:266 - Started ServerConnector@22cf2994{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:28:26  INFO Server:350 - Started @586ms
+2016-03-23 00:28:32  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:28:43  INFO log:178 - Logging initialized @296ms
+2016-03-23 00:28:43  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5c71b273{/,null,null} contextPath ends with /*
+2016-03-23 00:28:43  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:28:43  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:28:43  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5c71b273{/,null,AVAILABLE}
+2016-03-23 00:28:43  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@55aa628{/,null,AVAILABLE}
+2016-03-23 00:28:43  INFO ServerConnector:266 - Started ServerConnector@141ba1f1{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:28:43  INFO Server:350 - Started @577ms
+2016-03-23 00:28:47  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:33:50  INFO log:178 - Logging initialized @383ms
+2016-03-23 00:33:51  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2c7acb6f{/,null,null} contextPath ends with /*
+2016-03-23 00:33:51  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:33:51  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:33:51  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2c7acb6f{/,null,AVAILABLE}
+2016-03-23 00:33:51  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2d65c88b{/,null,AVAILABLE}
+2016-03-23 00:33:51  INFO ServerConnector:266 - Started ServerConnector@3abdd3e7{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:33:51  INFO Server:350 - Started @682ms
+2016-03-23 00:33:52  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:34:40  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:35:00  INFO log:178 - Logging initialized @278ms
+2016-03-23 00:35:00  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2c7acb6f{/,null,null} contextPath ends with /*
+2016-03-23 00:35:00  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:35:00  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:35:00  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2c7acb6f{/,null,AVAILABLE}
+2016-03-23 00:35:01  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@7a1fc671{/,null,AVAILABLE}
+2016-03-23 00:35:01  INFO ServerConnector:266 - Started ServerConnector@22cf2994{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:35:01  INFO Server:350 - Started @559ms
+2016-03-23 00:35:02  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:35:53  INFO log:178 - Logging initialized @328ms
+2016-03-23 00:35:54  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5c71b273{/,null,null} contextPath ends with /*
+2016-03-23 00:35:54  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:35:54  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:35:54  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5c71b273{/,null,AVAILABLE}
+2016-03-23 00:35:54  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@4917015d{/,null,AVAILABLE}
+2016-03-23 00:35:54  INFO ServerConnector:266 - Started ServerConnector@4688249c{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:35:54  INFO Server:350 - Started @609ms
+2016-03-23 00:35:56  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:35:59  WARN MsgSocketController:243 - Unhandled Error (closing connection)
+org.eclipse.jetty.websocket.api.WebSocketException: Cannot call method public void com.wahsis.chat.controller.MsgSocketController#onText(org.eclipse.jetty.websocket.api.Session, java.lang.String) with args: [org.eclipse.jetty.websocket.common.WebSocketSession, java.lang.String]
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:99)
+	at org.eclipse.jetty.websocket.common.events.annotated.OptionalSessionCallableMethod.call(OptionalSessionCallableMethod.java:68)
+	at org.eclipse.jetty.websocket.common.events.JettyAnnotatedEventDriver.onTextMessage(JettyAnnotatedEventDriver.java:209)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:64)
+	at org.eclipse.jetty.websocket.common.events.JettyAnnotatedEventDriver.onTextFrame(JettyAnnotatedEventDriver.java:201)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:169)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:302)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:210)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:219)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:257)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.read(AbstractWebSocketConnection.java:500)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:409)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:71)
+	... 16 more
+Caused by: java.lang.IllegalStateException: Not a JSON Object: "abc"
+	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:90)
+	at com.wahsis.chat.controller.MsgSocketController.processMsg(MsgSocketController.java:138)
+	at com.wahsis.chat.controller.MsgSocketController.onText(MsgSocketController.java:105)
+	... 21 more
+2016-03-23 00:37:23  INFO log:178 - Logging initialized @274ms
+2016-03-23 00:37:23  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5c71b273{/,null,null} contextPath ends with /*
+2016-03-23 00:37:23  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:37:23  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:37:23  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5c71b273{/,null,AVAILABLE}
+2016-03-23 00:37:23  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@55aa628{/,null,AVAILABLE}
+2016-03-23 00:37:23  INFO ServerConnector:266 - Started ServerConnector@141ba1f1{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:37:23  INFO Server:350 - Started @560ms
+2016-03-23 00:37:28  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 00:37:30  WARN MsgSocketController:243 - Unhandled Error (closing connection)
+org.eclipse.jetty.websocket.api.WebSocketException: Cannot call method public void com.wahsis.chat.controller.MsgSocketController#onText(org.eclipse.jetty.websocket.api.Session, java.lang.String) with args: [org.eclipse.jetty.websocket.common.WebSocketSession, java.lang.String]
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:99)
+	at org.eclipse.jetty.websocket.common.events.annotated.OptionalSessionCallableMethod.call(OptionalSessionCallableMethod.java:68)
+	at org.eclipse.jetty.websocket.common.events.JettyAnnotatedEventDriver.onTextMessage(JettyAnnotatedEventDriver.java:209)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:64)
+	at org.eclipse.jetty.websocket.common.events.JettyAnnotatedEventDriver.onTextFrame(JettyAnnotatedEventDriver.java:201)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:169)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:302)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:210)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:219)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:257)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.read(AbstractWebSocketConnection.java:500)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:409)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:71)
+	... 16 more
+Caused by: java.lang.IllegalStateException: Not a JSON Object: "abc"
+	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:90)
+	at com.wahsis.chat.controller.MsgSocketController.processMsg(MsgSocketController.java:142)
+	at com.wahsis.chat.controller.MsgSocketController.onText(MsgSocketController.java:105)
+	... 21 more
+2016-03-23 00:37:52  INFO log:178 - Logging initialized @432ms
+2016-03-23 00:37:52  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@31c1fb39{/,null,null} contextPath ends with /*
+2016-03-23 00:37:52  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 00:37:52  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 00:37:52  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@31c1fb39{/,null,AVAILABLE}
+2016-03-23 00:37:52  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3c1d635a{/,null,AVAILABLE}
+2016-03-23 00:37:52  INFO ServerConnector:266 - Started ServerConnector@4eb2c566{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 00:37:52  INFO Server:350 - Started @784ms
+2016-03-23 00:37:56  INFO MsgSocketController:51 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:17:04  INFO log:178 - Logging initialized @312ms
+2016-03-23 01:17:04  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2c7acb6f{/,null,null} contextPath ends with /*
+2016-03-23 01:17:04  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:17:04  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:17:04  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2c7acb6f{/,null,AVAILABLE}
+2016-03-23 01:17:04  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@36d5e82c{/,null,AVAILABLE}
+2016-03-23 01:17:04  INFO ServerConnector:266 - Started ServerConnector@116265c3{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:17:04  INFO Server:350 - Started @593ms
+2016-03-23 01:17:42  INFO MsgSocketController:53 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:18:04  INFO MsgSocketController:53 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:18:12  INFO MsgSocketController:53 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:25:21  INFO log:178 - Logging initialized @319ms
+2016-03-23 01:25:22  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3fd4714d{/,null,null} contextPath ends with /*
+2016-03-23 01:25:22  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:25:22  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:25:22  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3fd4714d{/,null,AVAILABLE}
+2016-03-23 01:25:22  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3d0c6482{/,null,AVAILABLE}
+2016-03-23 01:25:22  INFO ServerConnector:266 - Started ServerConnector@25c22d44{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:25:22  INFO Server:350 - Started @620ms
+2016-03-23 01:26:53  INFO log:178 - Logging initialized @388ms
+2016-03-23 01:26:53  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@a1d03ef{/,null,null} contextPath ends with /*
+2016-03-23 01:26:53  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:26:53  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:26:53  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@a1d03ef{/,null,AVAILABLE}
+2016-03-23 01:26:53  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@f4e7d3d{/,null,AVAILABLE}
+2016-03-23 01:26:53  INFO ServerConnector:266 - Started ServerConnector@268d5581{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:26:53  INFO Server:350 - Started @664ms
+2016-03-23 01:30:51  INFO log:178 - Logging initialized @356ms
+2016-03-23 01:30:51  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@76ed4518{/,null,null} contextPath ends with /*
+2016-03-23 01:30:51  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:30:51  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:30:51  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@76ed4518{/,null,AVAILABLE}
+2016-03-23 01:30:51  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6a0037a4{/,null,AVAILABLE}
+2016-03-23 01:30:51  INFO ServerConnector:266 - Started ServerConnector@8e89bed{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:30:51  INFO Server:350 - Started @631ms
+2016-03-23 01:31:16  INFO log:178 - Logging initialized @454ms
+2016-03-23 01:31:16  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@535367a7{/,null,null} contextPath ends with /*
+2016-03-23 01:31:16  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:31:16  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:31:16  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@535367a7{/,null,AVAILABLE}
+2016-03-23 01:31:16  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6a0037a4{/,null,AVAILABLE}
+2016-03-23 01:31:16  INFO ServerConnector:266 - Started ServerConnector@8e89bed{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:31:16  INFO Server:350 - Started @777ms
+2016-03-23 01:32:19  INFO log:178 - Logging initialized @422ms
+2016-03-23 01:32:19  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@77904cfb{/,null,null} contextPath ends with /*
+2016-03-23 01:32:19  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:32:19  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:32:19  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@77904cfb{/,null,AVAILABLE}
+2016-03-23 01:32:19  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@15e59f33{/,null,AVAILABLE}
+2016-03-23 01:32:19  INFO ServerConnector:266 - Started ServerConnector@3315a56d{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:32:19  INFO Server:350 - Started @790ms
+2016-03-23 01:32:44  INFO log:178 - Logging initialized @379ms
+2016-03-23 01:32:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@8ba2fae{/,null,null} contextPath ends with /*
+2016-03-23 01:32:45  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:32:45  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:32:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@8ba2fae{/,null,AVAILABLE}
+2016-03-23 01:32:45  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@15e59f33{/,null,AVAILABLE}
+2016-03-23 01:32:45  INFO ServerConnector:266 - Started ServerConnector@3315a56d{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:32:45  INFO Server:350 - Started @663ms
+2016-03-23 01:36:11  INFO log:178 - Logging initialized @304ms
+2016-03-23 01:36:11  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3fd4714d{/,null,null} contextPath ends with /*
+2016-03-23 01:36:11  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:36:11  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:36:11  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3fd4714d{/,null,AVAILABLE}
+2016-03-23 01:36:11  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2f90949b{/,null,AVAILABLE}
+2016-03-23 01:36:11  INFO ServerConnector:266 - Started ServerConnector@13e1329e{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:36:11  INFO Server:350 - Started @583ms
+2016-03-23 01:36:26  INFO MsgSocketController:58 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:36:30  INFO MsgSocketController:58 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:37:16  INFO log:178 - Logging initialized @325ms
+2016-03-23 01:37:17  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@6579b32a{/,null,null} contextPath ends with /*
+2016-03-23 01:37:17  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:37:17  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:37:17  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@6579b32a{/,null,AVAILABLE}
+2016-03-23 01:37:17  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@7423cbc6{/,null,AVAILABLE}
+2016-03-23 01:37:17  INFO ServerConnector:266 - Started ServerConnector@25dd7cb3{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:37:17  INFO Server:350 - Started @588ms
+2016-03-23 01:37:33  INFO MsgSocketController:58 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:37:35  INFO MsgSocketController:58 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:48:38  INFO log:178 - Logging initialized @334ms
+2016-03-23 01:48:38  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@399a09cf{/,null,null} contextPath ends with /*
+2016-03-23 01:48:38  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:48:38  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:48:38  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@399a09cf{/,null,AVAILABLE}
+2016-03-23 01:48:38  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@418c43ad{/,null,AVAILABLE}
+2016-03-23 01:48:38  INFO ServerConnector:266 - Started ServerConnector@49186b0b{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:48:38  INFO Server:350 - Started @632ms
+2016-03-23 01:49:24  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:49:25  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:49:27  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:55:39  INFO log:178 - Logging initialized @2677ms
+2016-03-23 01:55:40  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@4f1b7595{/,null,null} contextPath ends with /*
+2016-03-23 01:55:40  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:55:40  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:55:40  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@4f1b7595{/,null,AVAILABLE}
+2016-03-23 01:55:40  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@5bfdde41{/,null,AVAILABLE}
+2016-03-23 01:55:40  INFO ServerConnector:266 - Started ServerConnector@2e5dd26f{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:55:40  INFO Server:350 - Started @3056ms
+2016-03-23 01:55:56  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:55:57  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:55:59  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:57:41  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:57:42  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:57:43  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:59:42  INFO log:178 - Logging initialized @310ms
+2016-03-23 01:59:42  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@399a09cf{/,null,null} contextPath ends with /*
+2016-03-23 01:59:42  WARN ContextHandler:1335 - Empty contextPath
+2016-03-23 01:59:42  INFO Server:301 - jetty-9.1.5.v20140505
+2016-03-23 01:59:42  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@399a09cf{/,null,AVAILABLE}
+2016-03-23 01:59:42  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@5faf3479{/,null,AVAILABLE}
+2016-03-23 01:59:43  INFO ServerConnector:266 - Started ServerConnector@621bc4aa{HTTP/1.1}{0.0.0.0:8083}
+2016-03-23 01:59:43  INFO Server:350 - Started @619ms
+2016-03-23 01:59:57  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:59:58  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139
+2016-03-23 01:59:59  INFO MsgSocketController:59 - MsgSocketController.onConnect: remote address = 192.168.0.139

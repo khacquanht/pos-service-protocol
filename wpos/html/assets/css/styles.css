@@ -1,0 +1,49 @@
+.big-logo-container{
+	padding-top: 20px;
+}
+
+.navbar .navbar-inner .navbar-header .navbar-account .account-area{
+	right: 5px;
+}
+
+.page-breadcrumbs.breadcrumbs-fixed+.page-header{
+	background: white !important;
+}
+
+.page-header .header-buttons a{
+	width: auto !important;
+	color: black
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 50%;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 2px;
+	background: #fff;
+}
+
+.margin-top-10px{
+	margin-top: 10px;
+}

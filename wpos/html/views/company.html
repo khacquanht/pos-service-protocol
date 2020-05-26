@@ -1,0 +1,348 @@
+  
+
+<!-- Page Breadcrumb -->  
+                <div class="page-breadcrumbs breadcrumbs-fixed">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="active">Companies</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative page-header-fixed">
+                    <div class="header-title">
+                        <h1 class="hidden-xs">
+                            Companies Management
+                            <style type="text/css" media="screen">
+                                .pagination, .pager {
+                                       margin: 10px 0;
+                                }
+                            </style>
+                        </h1>
+                    </div>
+                    <!--Header Buttons-->
+                    <div class="header-buttons">
+                         <a class="" ng-click="toggle('add', 0)">
+                            <i class="fa fa-plus"></i> Add New company
+                        </a>
+                    </div>
+                    <!--Header Buttons End-->
+                </div>
+                <!-- /Page Header -->
+                <div class="page-body">
+                     <div class="well with-header with-footer">
+                        <div class="header bordered-pink">
+                            COMPANY LIST
+                        </div>
+                                <!-- Search -->
+                       <div class="row" style="margin: 0 1px;">
+
+                           <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <div class="my-controller">
+          <div class="row">
+<!--            <div class="col-xs-4">
+              <h3>Page: {{ currentPage }}</h3>
+            </div>-->
+            <div class="pull-left">
+              <input ng-model="q" id="search" class="form-control" placeholder="Filter text">
+            </div>
+<!--              <label for="search">items per page:</label>
+              <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">-->
+              <div class="pull-right">
+                <select ng-model="pageSize" class="form-control" style="border-radius: 0;">
+                    <option>2</option>
+                    <option>3</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>20</option>
+                </select>
+            </div>  
+          </div>
+          <br>
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th ng-click="sort('companyID')">
+                                {{No}}
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='companyID'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th ng-click="sort('companyCode')">
+                                {{Code}}
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='companyCode'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th ng-click="sort('companyName')">
+                                Company Name
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='companyName'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th ng-click="sort('address')">
+                                Address
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='addpress'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th ng-click="sort('phone')">
+                                Phone
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='phone'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th>
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr dir-paginate="company in companies | filter:q | orderBy : predicate :reverse | itemsPerPage: pageSize" current-page="currentPage">
+                            <td>{{ company.company_id }}</td>
+                            <td>{{ company.company_code }}</td>
+                            <td>{{ company.company_name }}</td>
+                            <td>{{ company.address }}</td>
+                            <td>{{ company.phone1 }}</td>
+                            <td>
+                                <!-- <a href="#" class="btn btn-default btn-xs purple"><i class="fa fa-eye"></i> Details</a> -->
+                                <a class="btn btn-default btn-xs purple" ng-click="toggle('edit', company.company_id)"><i class="fa fa-edit"></i> Edit</a>
+                                <a class="btn btn-default btn-xs black" ng-click="confirmDelete(company.company_id)"><i class="fa fa-trash-o"></i> Delete</a>
+                                <a class="btn btn-default btn-xs purple" ng-click="listbranch(company.company_id)"><i class="fa fa-eye"></i> List branch</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+
+        <div ng-controller="PageController" class="other-controller">
+          <div class="text-center">
+          <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="views/dirPagination.tpl.html"></dir-pagination-controls>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                        </div><br/>
+                        
+
+                    </div>                     
+                </div>
+               
+    <!-- Modal (Pop up when detail button clicked) -->
+    <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myLargeModalLabel">{{form_title}}</h4>
+                </div>
+                <div class="modal-body">                    
+                    <form name="frmCompany" id="myForm" class="tab-form-demo" novalidate="">
+                      <uib-tabset active="activeForm">
+                        <uib-tab index="0" heading="Name" class="tab-red">
+                            <div class="form-group">
+                              <label>Name</label>
+                              <input type="text" class="form-control has-error" id="name" name="name" placeholder="Company name" value="{{name}}" 
+                                ng-model="company.company_name" ng-required="true">
+                                <span class="help-inline" 
+                                ng-show="frmCompany.name.$invalid && frmCompany.name.$touched">Company Name field is required</span>
+                            </div>
+                            <div class="form-group">
+                              <label>Code</label>
+                              <input type="text" class="form-control has-error" id="code" name="code" placeholder="Company code" value="{{code}}" 
+                                ng-model="company.company_code" ng-required="true">
+                                <span class="help-inline" 
+                                ng-show="frmCompany.code.$invalid && frmCompany.code.$touched">Company Code field is required</span>
+                            </div>
+                            
+                        </uib-tab>
+                        <uib-tab index="1" heading="Info">
+<!--                            <div class="form-group">
+                              <label>Email</label>
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" value="{{email}}" 
+                                ng-model="company.email" ng-required="true">
+                                <span class="help-inline" 
+                                ng-show="frmCompany.email.$invalid && frmCompany.email.$touched">Email field is required</span>
+                            </div>
+                            <div class="form-group">
+                              <label>Address</label>
+                              <input type="text" class="form-control" id="address" name="address" placeholder="Company address" value="{{address}}" 
+                                ng-model="company.address" ng-required="true">
+                                <span class="help-inline" 
+                                ng-show="frmCompany.address.$invalid && frmCompany.address.$touched">Company address field is required</span>
+                            </div>
+                            <div class="form-group">
+                              <label>Phone</label>
+                              <input type="text" class="form-control" id="phone1" name="phone1" placeholder="Phone" value="{{phone}}" 
+                                ng-model="company.phone1" ng-required="true">
+                            <span class="help-inline" 
+                                ng-show="frmCompany.phone1.$invalid && frmCompany.phone.$touched">Phone field is required</span>
+                            </div>-->
+                            
+                        </uib-tab>
+                         <uib-tab index="2" heading="Info" class="tab-yellow">
+<!--                             <div class="form-group">
+                              <label>Company type</label>
+                              <select ng-model="company.company_type_id" class="form-control" name="company_type_id">
+                                    <option>Select company type</option>
+                                    <option ng-repeat="item in company_type" value="{{ item.company_type_id }}" ng-selected="company.company_type_id == item.company_type_id">{{ item.company_type_name }}</option>
+                                </select>
+                              <span class="help-inline" 
+                                ng-show="frmCompany.company_type_id.$invalid && frmCompany.company_type_id.$touched">Type field is required</span>
+                            </div>
+                            <div class="form-group">
+                              <label>Country</label>
+                                <select class="form-control" name="country_id">
+                                    <option>Select country</option>
+                                    <option ng-repeat="item in country" value="{{ item.country_id }}" ng-selected="company.company_type_id">{{ item.country_name }}</option>
+                                </select>
+                            </div>-->
+                        </uib-tab>
+                      </uib-tabset>                    
+                    </form>
+<!--                    <form name="frmCompany" id="myForm" class="form-horizontal" novalidate="">
+
+                         <div class="form-group error">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Company Code</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control has-error" id="code" name="code" placeholder="Company code" value="{{companyCode}}" 
+                                ng-model="company.companyCode" ng-required="true">
+                                <span class="help-inline" 
+                                ng-show="frmCompany.code.$invalid && frmCompany.code.$touched">Company Code field is required</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group error">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Company Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control has-error" id="name" name="name" placeholder="Company name" value="{{companyName}}" 
+                                ng-model="company.companyName" ng-required="true">
+                                <span class="help-inline" 
+                                ng-show="frmCompany.name.$invalid && frmCompany.name.$touched">Company Name field is required</span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" value="{{email}}" 
+                                ng-model="company.email" ng-required="true">
+                                <span class="help-inline" 
+                                ng-show="frmCompany.email.$invalid && frmCompany.email.$touched">Email field is required</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Address</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Company address" value="{{address}}" 
+                                ng-model="company.address" ng-required="true">
+                            <span class="help-inline" 
+                                ng-show="frmCompany.address.$invalid && frmCompany.address.$touched">Company address field is required</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Phone</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" value="{{phone}}" 
+                                ng-model="company.phone" ng-required="true">
+                            <span class="help-inline" 
+                                ng-show="frmCompany.phone.$invalid && frmCompany.phone.$touched">Phone field is required</span>
+                            </div>
+                        </div>
+
+                    </form>-->
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-save" ng-click="save(modalstate, id)" ng-disabled="frmCompany.$invalid">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.modal').on('hidden.bs.modal', function (e) {
+            //$("form").trigger('reset');
+    });
+    </script>
+    
+<!-- Modal (Pop up when detail button clicked) -->
+    <div id="listBranch" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myLargeModalLabel">List Branch</h4>
+                </div>
+                <div class="modal-body">     
+                    <div class="pull-left">
+                        <input ng-model="q" id="search" class="form-control" placeholder="Filter text">
+                    </div>
+          <!--              <label for="search">items per page:</label>
+                        <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">-->
+                        <div class="pull-right">
+                          <select ng-model="pageSize" class="form-control" style="border-radius: 0;">
+                              <option>2</option>
+                              <option>3</option>
+                              <option>5</option>
+                              <option>10</option>
+                              <option>20</option>
+                          </select>
+                      </div>  
+                    <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th ng-click="sort('companyID')">
+                                No
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='companyID'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th ng-click="sort('companyCode')">
+                                Code
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='companyCode'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th ng-click="sort('companyName')">
+                                Company Name
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='companyName'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th ng-click="sort('address')">
+                                Address
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='addpress'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th ng-click="sort('phone')">
+                                Phone
+                                <span class="glyphicon glyphicon-sort-by-attributes-alt" ng-show="sortKey=='phone'" ng-class="{'glyphicon glyphicon-sort-by-attributes-alt':reverse,'glyphicon glyphicon-sort-by-attributes':!reverse}"></span>
+                            </th>
+                            <th>
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr dir-paginate="item in branches | filter:q | orderBy : predicate :reverse | itemsPerPage: pageSize" current-page="currentPage">
+                            <td>{{ item.company_id }}</td>
+                            <td>{{ item.company_code }}</td>
+                            <td>{{ item.company_name }}</td>
+                            <td>{{ item.address }}</td>
+                            <td>{{ item.phone1 }}</td>
+                            <td>
+                                <!-- <a href="#" class="btn btn-default btn-xs purple"><i class="fa fa-eye"></i> Details</a> -->
+                                <a class="btn btn-default btn-xs purple" ng-click="toggle('edit', item.company_id)"><i class="fa fa-edit"></i> Edit</a>
+                                <a class="btn btn-default btn-xs black" ng-click="confirmDelete(item.company_id)"><i class="fa fa-trash-o"></i> Delete</a>
+                                <a href="#" class="btn btn-default btn-xs purple"><i class="fa fa-eye"></i> List branch</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-save" ng-click="save(modalstate, id)" ng-disabled="frmCompany.$invalid">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+       

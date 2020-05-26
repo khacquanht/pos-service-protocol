@@ -1,0 +1,35 @@
+INFO - start job : 2016-05-24 11:11:09
+INFO - synchronyze account : 2016-05-24 11:11:09
+INFO - local: Getting connection (user/password): jdbc:sqlserver://210.211.122.163:1433;databaseName=wahsisPMSReportOwner;user=wahsis_pos_user;password=WahSiS@123456
+INFO - local: Created a new connection
+INFO - local: Getting connection (user/password): jdbc:sqlserver://119.81.48.98:1433;databaseName=wahsisPMS;user=pms;password=123aA@!@#
+INFO - local: Getting connection (user/password): jdbc:sqlserver://210.211.122.163:1433;databaseName=wahsisPMSReportOwner;user=wahsis_pos_user;password=WahSiS@123456
+INFO - local: Created a new connection
+INFO - local: Getting connection (user/password): jdbc:sqlserver://210.211.122.163:1433;databaseName=wahsisPMSReportOwner;user=wahsis_pos_user;password=WahSiS@123456
+INFO - local: Created a new connection
+INFO - local: Getting connection (user/password): jdbc:sqlserver://210.211.122.163:1433;databaseName=wahsisPMSReportOwner;user=wahsis_pos_user;password=WahSiS@123456
+INFO - local: Created a new connection
+INFO - local: Getting connection (user/password): jdbc:sqlserver://210.211.122.163:1433;databaseName=wahsisPMSReportOwner;user=wahsis_pos_user;password=WahSiS@123456
+INFO - local: Created a new connection
+INFO - local: Created a new connection
+INFO - local: Getting connection (user/password): jdbc:sqlserver://119.81.48.98:1433;databaseName=wahsisPMS;user=pms;password=123aA@!@#
+INFO - synchronyze summary dashboard : 2016-05-24 11:11:10
+INFO - local: Created a new connection
+INFO - local: Getting connection (user/password): jdbc:sqlserver://119.81.48.98:1433;databaseName=wahsisPMS;user=pms;password=123aA@!@#
+INFO - local: Created a new connection
+INFO - local: Getting connection (user/password): jdbc:sqlserver://119.81.48.98:1433;databaseName=wahsisPMS;user=pms;password=123aA@!@#
+INFO - local: Created a new connection
+INFO - local: Getting connection (user/password): jdbc:sqlserver://119.81.48.98:1433;databaseName=wahsisPMS;user=pms;password=123aA@!@#
+INFO - local: Created a new connection
+INFO - synchronyze apartment fee : 2016-05-24 11:11:33
+INFO - synchronyze summary revenue : 2016-05-24 11:11:33
+INFO - finish job : 2016-05-24 11:12:04
+ocal: Getting connection (user/password): jdbc:sqlserver://119.81.48.98:1433;databaseName=wahsisPMS;user=pms;password=123aA@!@#
+2016-05-24 11:11:10  INFO local:839 - local: Created a new connection
+2016-05-24 11:11:10  INFO local:839 - local: Getting connection (user/password): jdbc:sqlserver://119.81.48.98:1433;databaseName=wahsisPMS;user=pms;password=123aA@!@#
+2016-05-24 11:11:10  INFO local:839 - local: Created a new connection
+2016-05-24 11:11:10  INFO local:839 - local: Getting connection (user/password): jdbc:sqlserver://119.81.48.98:1433;databaseName=wahsisPMS;user=pms;password=123aA@!@#
+2016-05-24 11:11:11  INFO local:839 - local: Created a new connection
+2016-05-24 11:11:33  INFO ServiceDaemon:50 - synchronyze apartment fee : 2016-05-24 11:11:33
+2016-05-24 11:11:33  INFO ServiceDaemon:52 - synchronyze summary revenue : 2016-05-24 11:11:33
+2016-05-24 11:12:04  INFO ServiceDaemon:54 - finish job : 2016-05-24 11:12:04

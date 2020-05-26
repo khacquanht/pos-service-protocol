@@ -1,0 +1,104 @@
+#!/bin/bash
+cd `dirname $0`
+
+# define JAVA_HOME, depends on environment
+JAVA_HOME="/usr/java/jdk1.7.0_51"
+
+# define custom variables, different values from different projects
+app_name=chatservice
+jar_file=dist/ChatService.jar
+pid_file=chatservice.pid
+conf_file=chatservice.ini
+
+console_log_file=logs/system.log
+console_log_history=logs/console_history.log
+
+function status {
+    if ps -p $1 | grep $1 > /dev/null
+    then
+        return 0
+    else
+        return 1
+    fi
+}
+
+
+function start {
+	if [ -f $pid_file ]; then
+		read pid <$pid_file
+		if `status $pid`; then
+			echo "Service is alredy running."
+			return
+		fi
+	fi
+
+	cat $console_log_file >> $console_log_history
+	nohup java -cp lib \
+	-Xmx300M \
+	-Dappname=$app_name \
+	-Dlog4j.configuration=file:./log4j.properties \
+	-Dconfiguration=$conf_file \
+	-jar ./$jar_file \
+	>$console_log_file 2>&1 &
+	pid=$!
+	if [[ -z  "$pid" ]]; then
+		echo "Service failed to start. See log for more info."
+	else
+		echo "$pid" > $pid_file
+		echo "Service has started. PID: $pid"
+	fi
+}
+
+function stop {
+	read pid <$pid_file
+	if `status $pid`; then
+		kill $pid
+	else
+		echo "Service is not running."
+		return 1
+	fi
+	echo "Waiting for the service to finish stopping..."
+	sleep 3
+	while [ 1 ]
+	do
+		if ps -p $pid | grep $pid > /dev/null
+		then
+			sleep 1
+		else
+			break
+		fi
+	done
+	return 0
+}
+
+case "$1" in
+start)
+start
+;;
+stop)
+stop
+;;
+restart)
+if stop; then
+	start
+fi
+;;
+status)
+read pid <$pid_file
+if `status $pid`; then
+	echo "Service is running. PID: $pid"
+else
+	echo "Service is not running."
+fi
+;;
+dump)
+read pid <$pid_file
+$JAVA_HOME/bin/jmap -histo:live $pid
+;;
+*)
+echo "Usage: `basename $0` start|stop|restart|status|dump"
+exit 1
+esac
+
+exit 0
+

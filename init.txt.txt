@@ -1,0 +1,6 @@
+cd existing-project
+git init
+git add --all
+git commit -m "Initial Commit"
+git remote add origin http://Hoang.Phan%40wahsis.com@code.wahsis.net/scm/wpos/pos-api.git
+git push -u origin master
